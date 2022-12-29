@@ -1,0 +1,17 @@
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand logo">
+                <img src="assets/images/logo.png" alt="Logo"/>
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a [routerLink]="item.value" [routerLinkActive]="item.value==currentRouteName?'yellow':'' " class="nav-item nav-link" *ngFor="let item of menuList" [innerHtml]="item.label"></a>
+                </div>
+               
+            </div>
+        </div>
+    </nav>
