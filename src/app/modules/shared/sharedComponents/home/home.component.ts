@@ -81,7 +81,7 @@ export class HomeComponent implements OnInit, OnChanges{
     this.randomList=[];
     let i=0;
     let unique=new Set<string>()
-  while(i<9 && this.symbolsList.length>0){
+  while(i<10 && this.symbolsList.length>0){
     let x=await Math.floor(Math.random() * this.symbolsList.length);
       if(!unique.has(this.symbolsList[x])){
         unique.add(this.symbolsList[x])
