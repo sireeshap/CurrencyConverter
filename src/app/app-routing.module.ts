@@ -1,18 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './components/home/home.component';
+import { HomeComponent } from 'src/app/modules/shared/sharedComponents/home/home.component';
+import { EurToUsdComponent } from './components/eur-to-usd/eur-to-usd.component';
 const routes: Routes = [
   {
-    path: '',
+    path: 'Home',
     component:HomeComponent
   },
   {
-    path: 'EUR-USD',
-    loadChildren: () => import('./modules/eur-to-usd/eur-to-usd.module').then(m => m.EurToUsdModule)
-  },
-  {
-    path: 'EUR-GBP',
-    loadChildren: () => import('./modules/eur-to-gbp/eur-to-gbp.module').then(m => m.EurToGbpModule)
+    path: 'Home/:id',
+    component:EurToUsdComponent
   },
    {
     path: '**',

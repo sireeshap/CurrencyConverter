@@ -9,7 +9,7 @@
             </button>
             <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarCollapse">
                 <div class="navbar-nav">
-                    <a [routerLink]="item.value" [routerLinkActive]="item.value==currentRouteName?'yellow':'' " class="nav-item nav-link" *ngFor="let item of menuList" [innerHtml]="item.label"></a>
+                    <a [routerLink]="['/Home',item.value]" [routerLinkActive]="item.value==currentRouteName?'yellow':'' " class="nav-item nav-link" *ngFor="let item of menuList" [innerHtml]="item.label"></a>
                 </div>
                
             </div>

@@ -1,20 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EurToGbpComponent } from './eur-to-gbp.component';
+import { MoreDetailsComponent } from './more-details.component';
 
-describe('EurToGbpComponent', () => {
-  let component: EurToGbpComponent;
-  let fixture: ComponentFixture<EurToGbpComponent>;
+describe('MoreDetailsComponent', () => {
+  let component: MoreDetailsComponent;
+  let fixture: ComponentFixture<MoreDetailsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ EurToGbpComponent ]
+      declarations: [ MoreDetailsComponent ]
     })
     .compileComponents();
-  });
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(EurToGbpComponent);
+    fixture = TestBed.createComponent(MoreDetailsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

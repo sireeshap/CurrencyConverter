@@ -4,9 +4,8 @@
 
 export const environment = {
   production: false,
-  //API_PATH:'https://data.fixer.io/api/',
   API_PATH:'https://api.apilayer.com/fixer/',
- API_KEY:'beG9gJy4sTSlCTyPKkY9NC3vgrOhropV',
+ API_KEY:'YOUR_API_KEY',
 };
 
 /*
